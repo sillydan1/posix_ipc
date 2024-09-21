@@ -71,5 +71,6 @@ distutools.setup(name=name,
                  classifiers=classifiers,
                  license=license,
                  keywords=keywords,
-                 ext_modules=ext_modules
+                 ext_modules=ext_modules,
+                 package_data={"posix_ipc": ["*.pyi", "py.typed"]}
                  )

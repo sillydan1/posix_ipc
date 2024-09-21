@@ -1,0 +1,19 @@
+from collections.abc import Callable
+from typing import Any
+
+class MessageQueue:
+    def __init__(
+        self,
+        name: str | None,
+        flags: int = ...,
+        mode: int = ...,
+        max_messages: int = ...,
+        max_message_size: int = ...,
+        read: bool = ...,
+        write: bool = ...,
+    ) -> None: ...
+    def send(self, message: str | bytes, timeout: float | None = ..., priority: int = ...) -> None: ...
+    def receive(self, timeout: float | None = ...) -> tuple[bytes, int]: ...
+    def request_notification(self, notification: int | tuple[Callable[[Any], None], Any] | None = ...) -> None: ...
+    def close(self) -> None: ...
+    def unlink(self) -> None: ...
