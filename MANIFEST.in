@@ -2,6 +2,7 @@ include INSTALL LICENSE VERSION
 include README.md USAGE.md history.md
 include setup.py prober.py
 include posix_ipc_module.c
+include posix_ipc.pyi
 recursive-include prober *.c
 recursive-include demo *.h *.c *.py *.sh *.png *.txt *.md
 recursive-include demo2 *.py *.txt *.png *.md

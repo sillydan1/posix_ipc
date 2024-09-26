@@ -72,5 +72,7 @@ distutools.setup(name=name,
                  license=license,
                  keywords=keywords,
                  ext_modules=ext_modules,
-                 package_data={"posix_ipc": ["*.pyi", "py.typed"]}
+                 packages=[name],
+                 package_data={"": ["*.pyi"]},
+                 include_package_data=True,
                  )

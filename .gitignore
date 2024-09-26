@@ -12,3 +12,4 @@ demo/*.o
 demo/premise
 demo/conclusion
 post_dist.py
+**/*.egg-info
