@@ -56,6 +56,10 @@ QUEUE_PRIORITY_MAX: int
 USER_SIGNAL_MIN: int
 USER_SIGNAL_MAX: int
 VERSION: str
+O_NONBLOCK: int
+O_RDONLY: int
+O_RDWR: int
+O_WRONLY: int
 
 # errors
 
