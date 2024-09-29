@@ -9,5 +9,5 @@ matrix:
       osx_image: xcode11.2  # Python 3.7
       language: shell       # 'language: python' is an error on Travis CI macOS
 
-install: python setup.py install
+install: python setup.py install && python pip install pybind11-stubgen
 script: python -m unittest discover

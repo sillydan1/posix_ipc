@@ -13,3 +13,5 @@ demo/premise
 demo/conclusion
 post_dist.py
 **/*.egg-info
+tests/stubs/
+posix_ipc*.so
